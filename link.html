@@ -1,0 +1,241 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+
+<title>蠢孩子| 好讚分享</title>
+<style type="text/css">
+<!--
+html {
+    overflow-y: scroll;
+}
+body {  
+	padding: 0;
+	color: #000;
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 100%;
+	line-height: 1;
+	background-attachment: fixed; 
+	background-repeat: no-repeat;
+	background-position: center top;
+	background-image: url(web_b3.png);
+	width: 800px;
+	margin-top: 0px;
+	margin-right: auto;
+	margin-bottom: 0px;
+	margin-left: auto;
+	height:1000px;
+	
+}
+
+/* ~~ 元素/標籤選取器 ~~ */
+ul, ol, dl { /* 由於瀏覽器之間的差異，最佳作法是在清單中使用零寬度的欄位間隔及邊界。為了保持一致，您可以在這裡指定所要的量，或在清單包含的清單項目 (LI、DT、DD) 上指定所要的量。請記住，除非您寫入較為特定的選取器，否則在此執行的作業將重疊顯示到 .nav 清單。 */
+	padding: 0;
+	margin: 0;
+}
+h1, h2, h3, h4, h5, h6, p {
+	margin-top: 0;	 /* 移除上方邊界可以解決邊界可能從其包含的 Div 逸出的問題。剩餘的下方邊界可以保持 Div 不與接在後面的元素接觸。 */
+	padding-right: 15px;
+	padding-left: 15px;
+	font: 50;
+}
+a img { /* 這個選取器會移除某些瀏覽器在影像由連結所圍繞時，影像周圍所顯示的預設藍色邊框 */
+	border: none;
+	margin-bottom: 0px;
+	margin-top: auto;
+	text-align: left;
+}
+/* ~~ 網站連結的樣式設定必須保持此順序，包括建立滑過 (Hover) 效果的選取器群組在內。~~ */
+a:link {
+	color: #42413C;
+	text-decoration: underline; /* 除非您要設定非常獨特的連結樣式，否則最好提供底線，以便快速看出 */
+}
+a:visited {
+	color: #42413C;
+}
+a:hover, a:active, a:focus { /* 這個選取器群組可以讓使用鍵盤導覽的使用者，也和使用滑鼠的使用者一樣擁有相同的滑過體驗。 */
+	text-decoration: none;
+	color: #0000FF;
+}
+
+/* ~~ 這個固定寬度的容器環繞著其他 Div ~~ */
+.container {
+	width: 1024px; /* 兩側的自動值與寬度結合後，版面便會置中對齊 */
+	margin-top: 0;
+	margin-right: auto;
+	margin-bottom: 0;
+	margin-left: auto;
+	padding-left: 100px;
+}
+
+/* ~~ 頁首沒有指定的寬度，而會橫跨版面的整個寬度。頁首包含影像預留位置，必須由您自己的連結商標加以取代 ~~ */
+.header {
+	margin-top: 0px;
+	margin-left: auto;
+	margin-right: auto;
+	background-attachment: scroll;
+	background-repeat: no-repeat;
+	background-position: left top;
+	height: 180px;
+	border-top-style: none;
+	border-right-style: none;
+	border-bottom-style: none;
+	border-left-style: none;
+	width: 850px;
+}
+
+/* ~~ 這是版面資訊。~~ 
+
+1) 欄位間隔只會置於 Div 的頂端或底部。此 Div 內的元素在兩側會有欄位間隔，可讓您不需進行「方塊模型計算」。請記住，如果對 Div 本身加入任何側邊的欄位間隔或邊框，在計算「總」寬度時，就會將這些加入您定義的寬度。您也可以選擇移除 Div 中元素的欄位間隔，然後在其中放置沒有寬度的第二個 Div，並依設計所需放置欄位間隔。
+
+*/
+
+.content {
+	margin-right:auto;
+	margin-left: auto;
+	padding-top: 10px;
+	padding-right:0px;
+	padding-bottom: 10px;
+	padding-left: 0;
+	margin-top: 10px;
+	height: 600px;
+	width: 850px;
+}
+.content table{
+	margin-right:auto;
+	margin-left: auto;
+	padding-top: 10px;
+	padding-right:0px;
+	padding-bottom: 10px;
+	padding-left: 0;
+	margin-top: 10px;
+	height: 300px;
+	width: 800px;
+	}
+
+/* ~~ 頁尾 ~~ */
+.footer2 {
+	margin-right: auto;
+	margin-left: auto;
+	padding-top: 70px;
+	padding-right: 0;
+	padding-bottom: 5px;
+	padding-left: 0;
+	margin-bottom: 0px;
+	text-align:center;
+	font-size:12px;
+}
+
+/* ~~ 其他 float/clear 類別 ~~ */
+.fltrt {  /* 這個類別可用來讓元素在頁面中浮動，浮動的元素必須位於頁面上相鄰的元素之前。 */
+	float: right;
+	margin-left: 8px;
+}
+.fltlft { /* 這個類別可用來讓元素在頁面左方浮動，浮動的元素必須位於頁面上相鄰的元素之前。 */
+	float: left;
+	margin-right: 8px;
+}
+.clearfloat { /* 這個類別可放置在 <br /> 或空白的 Div 上，當做接在 #container 內最後一個浮動 Div 後方的最後一個元素 (如果從 #container 移除或取出 #footer) */
+	clear:both;
+	height:0;
+	font-size: 1px;
+	line-height: 0px;
+}
+.index {
+	background-color: #FFFFFF;
+	margin-top: 3px;
+	margin-left: 30px;
+}
+.container .content blockquote p {
+	font-family: 微軟正黑體 Light;
+	font-size: 18px;
+}
+.container .header table tbody tr td {
+	font-family: 微軟正黑體 Light;
+}
+.footer {
+	margin-bottom: 0px;
+	padding-bottom: 0px;
+	bottom: 0px;
+	clip: rect(auto,auto,0px,auto);
+	-webkit-transition: all;
+	-moz-transition: all;
+	-ms-transition: all;
+	-o-transition: all;
+	transition: all;
+}
+.content p strong {
+	color: #000;
+}
+-->
+</style>
+
+
+<script type="text/javascript">
+function MM_swapImgRestore() { //v3.0
+  var i,x,a=document.MM_sr; for(i=0;a&&i<a.length&&(x=a[i])&&x.oSrc;i++) x.src=x.oSrc;
+}
+function MM_preloadImages() { //v3.0
+  var d=document; if(d.images){ if(!d.MM_p) d.MM_p=new Array();
+    var i,j=d.MM_p.length,a=MM_preloadImages.arguments; for(i=0; i<a.length; i++)
+    if (a[i].indexOf("#")!=0){ d.MM_p[j]=new Image; d.MM_p[j++].src=a[i];}}
+}
+
+function MM_findObj(n, d) { //v4.01
+  var p,i,x;  if(!d) d=document; if((p=n.indexOf("?"))>0&&parent.frames.length) {
+    d=parent.frames[n.substring(p+1)].document; n=n.substring(0,p);}
+  if(!(x=d[n])&&d.all) x=d.all[n]; for (i=0;!x&&i<d.forms.length;i++) x=d.forms[i][n];
+  for(i=0;!x&&d.layers&&i<d.layers.length;i++) x=MM_findObj(n,d.layers[i].document);
+  if(!x && d.getElementById) x=d.getElementById(n); return x;
+}
+
+function MM_swapImage() { //v3.0
+  var i,j=0,x,a=MM_swapImage.arguments; document.MM_sr=new Array; for(i=0;i<(a.length-2);i+=3)
+   if ((x=MM_findObj(a[i]))!=null){document.MM_sr[j++]=x; if(!x.oSrc) x.oSrc=x.src; x.src=a[i+2];}
+}
+</script>
+</head>
+
+
+<body onload="MM_preloadImages('Attending-Information1.png','Juges1.png','Contact-Us1.png','Finalists2.png')">
+
+
+  <div class="header"> <table width="788" border="0">
+      <tr>
+          <td width="295"><a href="home.html"><img src="FB.jpg" width="295" height="65" longdesc="home.html" /></a></td>
+          <td width="483" align="right" valign="bottom">&nbsp;<a href="home.html" onmouseout="MM_swapImgRestore()" onmouseover="MM_swapImage('Image8','','home1.png',1)"><img src="silly.png" name="Image8" width="100" height="130" id="Image8" /></a> &nbsp;<a href="Introduction1.html" onmouseout="MM_swapImgRestore()" onmouseover="MM_swapImage('Image9','','Introduction1.png',1)"><img src="silly.png" name="Image9" width="100" height="130" id="Image9" /></a> &nbsp;<a href="painting.html" onmouseout="MM_swapImgRestore()" onmouseover="MM_swapImage('Image10','','silly_painting.png',1)"><img src="silly.png" name="Image10" width="100" height="130" id="Image10" /></a> &nbsp;<a href="video.html" onmouseout="MM_swapImgRestore()" onmouseover="MM_swapImage('Image11','','silly_Video.png',1)"><img src="silly.png" name="Image11" width="100" height="130" id="Image11" /></a></td>
+    </table>
+     
+      <p align="right">&nbsp;</p>
+</div>
+  </div>
+  <div class="content">
+  <p><h3>&nbsp;&nbsp;&nbsp;&nbsp;好讚分享
+  </h3>
+  <table width="771" height="347">
+    <tr valign="top">
+  <td width="424" height="341">
+  <p><img src="10.jpg" width="394" height="257" /></p>
+  <p>角色同人繪 </p>
+  <p><a href="https://www.facebook.com/kkbingo8951" target="_blank">by VIKI呆</a></p>
+  </td>
+  <td  width="335"><p><img src="11.png" width="251" height="252" /></p>
+    <p><a href="https://www.facebook.com/wenpinbook?fref=photo" target="_blank" id="js_u" aria-describedby="js_t" aria-haspopup="true" aria-owns="js_s" data-gt="{'entity_id':'140574566123631','entity_path':'\/ajax\/pagelet\/generic.php:PhotoViewerInitPagelet'}" data-ft="{'tn':'k'}" data-hovercard="/ajax/hovercard/page.php?id=140574566123631">繪客室 Painters</a></p></td>
+  </tr>
+  <tr>
+  <td colspan="2">
+    <p>蠢孩子 FB粉絲團 : <a href="https://www.facebook.com/pages/蠢孩子/1049174558433341" target="_blank">https://www.facebook.com/pages/%E8%A0%A2%E5%AD%A9%E5%AD%90/104917</a></p>
+    <p><a href="https://www.facebook.com/pages/蠢孩子/1049174558433341" target="_blank">4558433341</a></p>
+    <p>蠢孩子twitch: <a href="http://www.twitch.tv/smallsillychild" target="_blank">http://www.twitch.tv/smallsillychild</a></p>
+    <p>蠢孩子 youtbe Live: </p>
+    <p><a href="https://www.youtube.com/channel/UC-Lg0hTLB9a8CzFu0y0hWvA/videos?view_as=public" target="_blank">https://www.youtube.com/channel/UC-Lg0hTLB9a8CzFu0y0hWvA/videos?view_as=public</a></p></td>
+  </tr>
+</table>
+ 
+</div>
+<div class="footer2">
+<address>
+<p>COPYRGHT&copy; sillychildworkstand design
+</address></p></div>
+</body>
+</html>
